@@ -14,6 +14,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 
 import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -33,12 +34,13 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         binding.setLifecycleOwner(this);
 
-        MainViewModel vm = new MainViewModel();
+
+
+        MainViewModel vm = new ViewModelProvider(this).get(MainViewModel.class);
         binding.setMainVm(vm);
         setContentView(binding.getRoot());
 
-        // 아바타 이미지 세팅
-        vm.lvAvartarImgUrl.setValue("https://i.pravatar.cc/600?img=38");
+
 
         setSupportActionBar(binding.appBarMain.toolbar);
 

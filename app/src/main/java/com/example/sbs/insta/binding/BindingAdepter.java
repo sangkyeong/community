@@ -11,4 +11,9 @@ public class BindingAdepter {
     public static void imgUrl(ImageView view, String imgUrl) {
         Util.loadImageOn(imgUrl, view);
     }
+
+    @BindingAdapter({"imgUrl", "borderRadius"})
+    public static void imgUrl(ImageView view, String imgUrl, int borderRadius) {
+        Util.loadImageOn(imgUrl, view, borderRadius);
+    }
 }

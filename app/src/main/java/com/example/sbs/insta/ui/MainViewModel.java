@@ -1,4 +1,4 @@
-package com.example.sbs.insta;
+package com.example.sbs.insta.ui;
 
 import androidx.lifecycle.MutableLiveData;
 

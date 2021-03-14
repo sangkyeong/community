@@ -22,7 +22,9 @@ import androidx.navigation.ui.NavigationUI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import dagger.hilt.android.AndroidEntryPoint;
 
+@AndroidEntryPoint
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;

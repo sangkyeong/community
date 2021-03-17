@@ -1,4 +1,4 @@
-package com.example.sbs.insta.ui.home;
+package com.example.sbs.insta.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
